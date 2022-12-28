@@ -1,0 +1,263 @@
+.button0:hover {background-color:  #666}
+ 
+  
+  .button0:active {
+    background-color:  #666;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+   
+  }
+  .button3:hover {background-color:  #666}
+ 
+  
+  .button3:active {
+    background-color:  #666;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+   
+  }
+  .button2:hover {background-color:  #666}
+ 
+  
+  .button2:active {
+    background-color:  #666;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+   
+  }
+  .button4:hover {background-color:  #666}
+ 
+  
+  .button4:active {
+    background-color:  #666;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+   
+  }
+.button2{
+  font-size: x-large;
+  font-weight: 700;
+  position: relative;
+  margin-left:380px;
+  bottom: -5px;
+  color: black;
+  border-radius: 5px;
+  font-family: sans-serif;
+  
+  
+}
+.button0{
+  font-size: x-large;
+  font-weight: 700;
+  border-radius: 5px;
+  position: relative;
+  font-family: sans-serif;
+  
+  
+  margin-left: 30px;
+  bottom: -5px;
+  color: black; 
+}
+.button3{
+  font-size: x-large;
+  font-weight: 700;
+  border-radius: 5px;
+  position: relative;
+  color: black;
+  font-family: sans-serif;
+  
+  margin-left: 410px;
+  bottom: -5px;
+
+  
+  
+}
+
+.log{
+  width:110px;
+  height: 90px;
+  margin-left: 20px;
+}
+.button4{
+  font-size: x-large;
+  font-weight: 700;
+  border-radius: 5px;
+  position: relative;
+  color: black;
+  font-family: sans-serif;
+  
+  
+  margin-left: 490px;
+  bottom: -5px;
+
+}
+.box6{
+  background-color:white;
+  
+
+  bottom: 19px;
+  height:90px;
+  
+}
+body{
+  margin: 0;
+  padding: 0;
+  
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ }
+ .Cart-Container{
+  width: 70%;
+  height: 85%;
+  background-color: white;
+  
+  border-radius: 20px;
+  box-shadow: 0px 25px 40px #1687d933;
+  overflow: scroll;
+  margin-bottom: 100px;
+  
+ }
+ .Header{
+  margin: auto;
+  width: 90%;
+  height: 15%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+ }
+ .Heading{
+  font-size: 20px;
+  font-family: sans-serif;
+  font-weight: 700;
+  color: #2F3841;
+ }
+ .Action{
+  font-size: 14px;
+  font-family: sans-serif;
+  font-weight: 600;
+  color: #E44C4C;
+  cursor: pointer;
+  border-bottom: 1px solid #E44C4C;
+ }
+ .Cart-Items{
+  margin: auto;
+  width: 90%;
+  height: 30%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+ }
+ .image-box{
+  width: 15%;
+  text-align: center;
+ }
+ .about{
+  height: 100%;
+ }
+ .title{
+  padding-top: 80px;
+  line-height: 10px;
+  font-size: 32px;
+  font-family: "Open Sans";
+  font-weight: 800;
+  color: #202020;
+ }
+ .subtitle{
+  line-height: 10px;
+  font-size: 18px;
+  font-family: "Open Sans";
+  font-weight: 600;
+  color: white;
+ }
+ .title1{
+  position: relative;
+  right:700px;
+  bottom: 40px;
+  
+ 
+ }
+ 
+ 
+ .count{
+  font-size: 20px;
+  font-family: "Open Sans";
+  font-weight: 900;
+  color: #202020;
+ }
+ .prices{
+  height: 100%;
+  text-align: right;
+  margin-top: 80px;
+ }
+ .amount{
+  padding-top: 20px;
+  font-size: 26px;
+  font-family: "Open Sans";
+  font-weight: 800;
+  color: #202020;
+ }
+ .save{
+  padding-top: 5px;
+  font-size: 14px;
+  font-family: "Open Sans";
+  font-weight: 600;
+  color: #1687d9;
+  cursor: pointer;
+ }
+ .remove{
+  padding-top: 5px;
+  font-size: 14px;
+  font-family: "Open Sans";
+  font-weight: 600;
+  color: #E44C4C;
+  cursor: pointer;
+ }
+ hr{
+  width: 66%;
+  float: right;
+  margin-right: 5%;
+ }
+ .checkout{
+  float: right;
+  margin-right: 5%;
+  width: 28%;
+ }
+ .total{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+ }
+ .Subtotal{
+  font-size: 22px;
+  font-family: "Open Sans";
+  font-weight: 700;
+  color: #202020;
+ }
+ .items{
+  font-size: 16px;
+  font-family: "Open Sans";
+  font-weight: 500;
+  color: #909090;
+  line-height: 10px;
+ }
+ .total-amount{
+  font-size: 36px;
+  font-family: "Open Sans";
+  font-weight: 900;
+  color: #202020;
+ }
+ .button{
+  margin-top: 5px;
+  width: 100%;
+  height: 40px;
+  border: none;
+  
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 16px;
+  font-family: "Open Sans";
+  font-weight: 600;
+  color: #202020;
+ }

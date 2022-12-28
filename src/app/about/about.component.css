@@ -1,0 +1,134 @@
+.cont0{
+    height: 1100px;
+    width: 2000px;
+    font-family: 'Times New Roman', Times, serif;
+  
+    background-color: rgb(205, 201, 201);
+    
+  }
+  .left{
+    width: 630px;
+    height: 300px;
+    position: relative;
+    bottom: 1100px;
+    left: 30%;
+  }
+  img{
+    height: 500px;
+    width: 800px;
+    margin-left: 290px;
+    margin-top: 19%;
+    
+  
+  }
+  .box6{
+    background-color:white;
+    
+   
+    bottom: 19px;
+    height:90px;
+    
+  }
+  .color{
+  
+    position: relative;
+    top: 20px;
+    left:500px;
+    font-size: xx-large;
+    font-weight: 900;
+    color: #000;
+    font-style: bold;
+    color: white;
+  
+    
+  }
+  .color1{
+    font-size: x-large;
+    font-weight: 700;
+    color: black;
+    bottom:190px;
+    position: relative;
+    margin-left: -90px;
+    
+    
+  }
+  .color2{
+    font-size: x-large;
+    font-weight: 700;
+    position: relative;
+    margin-left: 250px;
+    color: black;
+   bottom:190px;
+    
+    
+  }
+  .color3{
+    font-size: x-large;
+    font-weight: 700;
+    position: relative;
+    margin-left: 350px;
+    color: black;
+    bottom:190px;
+    
+  }
+  .color4{
+    font-size: x-large;
+    font-weight: 700;
+    position:relative;
+    margin-left: 390px;
+    color: black;
+    bottom:190px
+  }
+  h1{
+    
+      font-weight:400;
+      font-size: 30px;
+      font-family:'Times New Roman', Times, serif;
+      position: relative;
+      bottom: 730px;
+      display: inline-block;
+      left: 15%;
+      color:black;
+      
+  
+  }
+  h3{
+    font-weight:bold;
+      font-size: 30px;
+      font-family:'Times New Roman', Times, serif;
+      position: relative;
+      bottom: 750px;
+      display: inline-block;
+      left: 15%;
+      color:black;
+
+  }
+  .log{
+    width: 120px;
+    height: 90px;
+    position: relative;
+    bottom: 380px;
+    right:290px;
+  }
+  h2{
+    font-weight:bold;
+    font-size: 40px;
+    position: relative;
+    bottom: 800px;
+    display: inline-block;
+    left: 35%;
+    color:black;
+  }
+  .btn-buy{
+    position: relative;
+    left: 16%;
+    bottom: 80%;
+    width: 215px;
+    height:60px;
+    font-size: x-large;
+    font-weight: bold;
+    color: white;
+    background-color: rgb(71, 143, 245);
+  } 
+  
+  

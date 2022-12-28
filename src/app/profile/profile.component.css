@@ -1,0 +1,120 @@
+.cont4{
+    height: 1100px;
+    width: 2000px;
+    font-family: 'Times New Roman', Times, serif;
+  
+    background-color: rgb(205, 201, 201);
+    
+  }
+  .left{
+    width: 630px;
+    height: 300px;
+    position: relative;
+    bottom: 1100px;
+    left: 30%;
+  }
+  
+  .box6{
+    background-color:white;
+    
+  
+    bottom: 19px;
+    height:100px;
+    
+  }
+  
+.color2{
+  font-size: x-large;
+  font-weight: 700;
+  position: relative;
+  margin-left:280px;
+  bottom: -10px;
+  color:black
+  
+  
+}
+.color1{
+  font-size: x-large;
+  font-weight: 700;
+  position: relative;
+  
+  
+  margin-left: 180px;
+  bottom: -10px;
+  color: black; 
+}
+.color3{
+  font-size: x-large;
+  font-weight: 700;
+  position: relative;
+  color: black;
+  
+  margin-left: 290px;
+  bottom: -10px;
+
+  
+  
+}
+.log{
+  width:160px;
+  height: 80px;
+  
+
+}
+.color4{
+  font-size: x-large;
+  font-weight: 700;
+  position: relative;
+  color: black;
+  
+  margin-left: 490px;
+  bottom: -10px;
+
+  
+  
+}
+
+.dim{
+  position: relative;
+    left:  1%;
+    bottom: 75%;
+    font-style: inherit;
+
+    
+    font-size: 60px;
+    font-weight: bolder;
+    
+    color:black;
+
+}
+.ho{
+  height: 1000px;
+    width: 2000px;
+    position: relative;
+    top: -60px;
+
+}
+  h1{
+    
+      font-weight: bold;
+      font-size: 70px;
+      position: relative;
+      bottom: 1240px;
+      display: inline-block;
+      left: 20%;
+      color:white;
+  
+  }
+  .btn-buy{
+    position: relative;
+    left:  87%;
+    bottom: 95%;
+    width: 250px;
+    height:60px;
+    font-size: x-large;
+    font-weight: bold;
+    border-radius: 20px;
+    color: rgb(3, 90,82);
+  }
+  
+  

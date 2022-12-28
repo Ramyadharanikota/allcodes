@@ -1,0 +1,423 @@
+<div class="cont70">        
+    <div class="box6" >
+      <img src="/assets/rt.png" class="log">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  
+      <span routerLink="/home" class="button" >HOME</span>
+      <span routerLink="/order" class="button2">PRODUCT</span>
+      <span routerLink="/about"  class="button3">ABOUT US</span>
+      <span class="button4"> <!--<img
+      src="https://th.bing.com/th/id/R.8e2c571ff125b3531705198a15d3103c?rik=gzhbzBpXBa%2bxMA&riu=http%3a%2f%2fpluspng.com%2fimg-png%2fuser-png-icon-big-image-png-2240.png&ehk=VeWsrun%2fvDy5QDv2Z6Xm8XnIMXyeaz2fhR3AgxlvxAc%3d&risl=&pid=ImgRaw&r=0" >-->PROFILE</span>
+      <BR>
+      </div>
+      <br>
+      <br>
+      
+      <div class="box1" >
+                      <mat-toolbar>
+              
+                        <mat-toolbar-row>
+              
+                          <button mat-icon-button>
+              
+                            <mat-icon (click)="sidenav.toggle();"><img src="https://cdn.icon-icons.com/icons2/916/PNG/512/Menu_icon_icon-icons.com_71858.png" class="bin12"></mat-icon>
+              
+                          </button>
+              
+              
+              
+                        </mat-toolbar-row>
+              
+                      </mat-toolbar>
+              
+                      <mat-sidenav-container>
+              
+              
+                        <mat-sidenav #sidenav opend="true" mode="side">
+              
+                          <mat-nav-list>
+              
+                            <a href="/dashboard" class="bgclr" mat-list-item><img src="https://www.nicepng.com/png/detail/937-9379647_png-file-svg-instagram-home-icon-vector.png" class="bin"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              
+                            <a href="/organization" class="bgclr" mat-list-item><img src="https://cdn.icon-icons.com/icons2/1369/PNG/512/-shopping-cart_90604.png"class="bin"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;>
+                            <a href="/domains" class="bgclr" mat-list-item><img src="data:image/jpeg;base64,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" class="bin"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              
+                            <a href="/users" class="bgclr" mat-list-item><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAe1BMVEX///8AAADKysoaGhpsbGzq6urz8/MEBARWVlYnJyfd3d35+fn29vb8/Pzj4+NfX1/R0dGWlpaqqqrAwMC5ubmOjo5mZmZHR0fX19cgICBQUFC0tLTf39+jo6N2dnYVFRUvLy+CgoJAQEA4ODiFhYVDQ0OamporKysPDw/HG+1XAAAF7UlEQVR4nO2da3uiMBBGRcWt9S5q66UqtRf//y/cagUDM4FMhGR13/Np9xHrHIFkMhnaRgMAAAAAAAAAAAAAAAAAAAAAAAAA4H8lXLYn0+YwHPgOpD7mwZnu52g+jTb9nu94aqAVqBw/R/FbNO74jqpKmgHLchRPZuOh7+gqYcErJnxuJ9Px8K5PalhsmJzT98VkGg07d3mjvhkpJqYvo3gavfZ9By2jK1FM6Ea+wxYwtjEM7uo0ti0E276DFtGxMGz6DlrGVCy49B2ylHep4cR3xFKepYb3l+3EMsGV73jlDGSGa9/xWrAWGd5l8iaZFLe+g7ViIzAc+w7Wjrmx4M53qJb0jA2/fIdqR9QqV7sQ+o7VhuHK2C948h2sBT3ze/CHme9w5ax3EsHj3U2GwxeJXxDEvgMW0o9lfkHw6jtkGfKV4cFvwENZfehVvC4MgreaQjeiE4uy/s5W7hcEHovDlyHfeCwX1UlTRnUqFDL4SmIwu1Cb31aChj+9BqbHaxAGZbCwZLdCT/0qLOvsCSlV/NKEX86HCx1Cc5+Po3j9Fi2tBYNnR04qY27EL5iVJTk24d2dV8KrJl7ddy3LsQlTp3I/DPUDBq84M18EsjieDItnbKZmK82xCQunfv2PknDyK/FefKOf2+2Y3qQ8nqyiPMcmOKxADYwyrpaiaJNjE+bOBNeGE1o3GRjEOfYu4sZcV9sxM/N99+/frWhxjj0f5FuJTjiaDGkCU0S39/MOaSfC6Hx101YiJ9sxY+l4fyiYMnm6yYA5yr/ioDfhmXxo9Vw3d/OtRPX3JoQ2LRNCFuoMk1uB1L0dY1dykPGdk8jc8t81+92WMJtBakyZVqJaexMGBgnMzWyZrFq9burcjlErFHVxYFeUSitRjdsxpgnMTeimumnpETdzS8XBmDjfyL7ZJP86JMfU5NesIl8uY5VPN3vz6zLp9XJQPb0JugpFpbRIBflUB7guBOPfw+qYDMXplhXz/AX6Wwe4Gvb/nP5fQ6OeiwTmZ4DU1QGUxfy5lajy3oRO7MKvS4oSaWOU+srpXql4MuxbJTBtWd8Wk6QodQDVcFj5ZGhVcl/9zNiR5A2L/GnJJL6Zs/tR7XaMVQJz+I3IXJFeoNk6QOblwa7C3oSZjd8+/YpNFWmOnasDZL+A6urA0YEPqJCumk8Z3Yskx6Z7bfUURsUVijO5nYTyqug7ybGZG78Ow+cnG78JeTSyrK5G9lbYQlX1hnYJzJyrDRUqxvkxI+S/2MoNReN8ArdkPaFfLr8wOTZP9edQ1Fh2pq0vQGvCpjm2vvO5ekNpPvJUuNvM7krNmUnNoWFD1PvxQtcym5F6zcbkLWQR6NxQcCce6MefBqqjqpgrPS41aZdLw4bpZLind1P469PVKmoLgU4NNc9U52jRglAnvev26uRxDZ7k2GGfHuTAsGFSsmD6AtW5Ya/O/5cZ9pvJsVNlt4blj4/RBCY/vWcUR+x3Mt4HvgzpblaWD5rArMlK5F1VXOlybF+GhY/lbGkdIeL2SleKYo9MKpcc25dhwbNVCzqb9TSDb0HBIW249Gao++0GK25PQft0sk4xvN4F3gwbMfdhTAJzovNHFx3/s9Vk1Z8hc16YBOZyrMgwyqT2/gzJqqCrb9qWGG5yc61Hw9wDcrTXsZ/mNOaGA7LU8GiYmcGZSvrb9SFqY0NmYebTsJF+BrOcO1WZ0pHS0JDtZ/NqeKmVxbRCMTvvlcoMNQ0cXg3PvyymzSQwl1KqyFBXWvRrOAueaAJzLaVKDLVLTr+GA5rAqHvBEkNtC4BfQ8ImU0qVGGp7Ev8pwzA3VjyaIe1WfyxDrtnrkQz5bvUHMpzyT7c8jGGoG+kfxlBbeIMhDGEIQxjCEIYwhCEMYQhDGMIQhjCEIQxhCEMYwhCGMIQhDGEIQxjCEIYwhCEMYQhDGMIQhjCEIQxhCEMY/quGuiPu5LmnTdBiOaZ/bqmz5I9oXQ0PO80RqeH2qDnizv7qNgAAAAAAAAAAAAAAAAAAAAAAAAD+U/4CVDFqiKBV9pYAAAAASUVORK5CYII=" class="bin"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <a href="/subscription" class="bgclr" mat-list-item><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThITNfccoK6saMze1ts2kXVqSNWm3LQ27LxA&usqp=CAU" class="bin"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <a href="/groups" class="bgclr" mat-list-item><img src="https://cdn-icons-png.flaticon.com/512/126/126472.png" class="bin0">
+                              </a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              
+              
+              
+                            <a href="/securitycompliances" class="bgclr" mat-list-item><img src="https://cdn-icons-png.flaticon.com/512/1946/1946429.png" class="bin0"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            
+              
+                            <a href="/audit" class="bgclr" mat-list-item></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              
+                            <a href="/mailsettings" class="bgclr" mat-list-item></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                          </mat-nav-list>
+              
+                        </mat-sidenav>
+              
+                        <mat-sidenav-content>
+              
+                          <div style="height: 99vh">
+              
+                            <router-outlet>
+              
+                            </router-outlet>
+              
+                          </div>
+              
+                        </mat-sidenav-content>
+              
+                      </mat-sidenav-container>
+                    </div>
+                    <h1 class="h1">ORDERS</h1>
+                   <!--<button class="imp" style="font-style: normal; font-size: large;" >Export to Excel</button> 
+                    &nbsp;
+                    &nbsp;
+                    &nbsp;
+                    
+        
+                    
+                    
+                    <button class="imp" style="font-style: normal; font-size: large; ">Import Orders</button>
+                    
+                    &nbsp;
+                    &nbsp;
+                    &nbsp;
+                    <button class="imp" style="background-color: rgb(43, 13, 70);font-style: normal; font-size: large; color: white;">+ New Order</button>-->
+
+                   
+                    <input  class="input" type ="text" placeholder="Enter first name to search" [(ngModel)]="searchtext"/>
+                    <img src="https://cdn2.iconfinder.com/data/icons/ios-7-icons/50/search-512.png" class="bin1">
+   <div class="imp1" >
+    
+                     
+  
+  <select  style=" width: 130px;height:40px; border-radius: 5px;font-weight: 800px; font-style: normal; font-size: large;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <option value="saab" >Sales Channel</option>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</select>
+</div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<div class="imp4">
+
+<select  style=" width: 110px;height:40px; border-radius: 5px;font-weight: 800px; font-style: normal; font-size: large;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <option value="opel" >Status</option>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </select>
+</div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <div class="imp5">
+<select  style=" width: 150px;height:40px; border-radius: 5px; font-weight: 800px; font-style: normal; font-size: large;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <option value="audi" >More Filters</option>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </select>
+</div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<div class="imp3">
+ 
+  <input type="Date" id="Date" name="Date" style="width:180px;font-weight: 800px; font-style: normal; font-size: large;border-radius: 5px; bottom:1020px;">
+
+</div>
+
+                  
+                    
+                   
+     
+<!---------------------------------------------------------------------->
+
+<div class="bod1">
+                    
+                    <!--<button (click)="manageAllRows(true)">Expand All</button>
+                    <button (click)="manageAllRows(false)">Collpase All</button>-->
+                  
+                    <!--<table mat-table [dataSource]="dataSource" multiTemplateDataRows class="mat-elevation-z8">
+                      <ng-container matColumnDef="{{column}}" *ngFor="let column of columnsToDisplay | filter:searchtext" >
+                        <th mat-header-cell *matHeaderCellDef  style="font-size: x-large; font-weight: bold; color: black; font-family: sans-serif;"> {{column}} </th>
+          
+                        <td mat-cell *matCellDef="let element" style="font-size: large; font-weight: 400px; font-family: sans-serif;"> {{element[column]}} </td>
+                      </ng-container>
+                        
+                  
+                      <!-- Expanded Content Column - The detail row is made up of this one column that spans across all columns 
+                      <ng-container matColumnDef="expandedDetail">
+                        <td mat-cell *matCellDef="let element" [attr.colspan]="columnsToDisplay.length" style="font-size: large;" >
+                          <div class="col-12 col-md-7 col-sm-12 col-lg-9" class="example-element-detail" [@detailExpand]="element.expanded ? 'expanded' : 'collapsed'">
+                            <table class="table table-bordered" class="detail-table">
+                              <tr >
+                                <th >Image</th>
+                                <th>Title</th>
+                                <th>price</th>
+                                <th>category</th>
+                                
+                              </tr>
+                              <tr *ngFor="let text of data | filter:searchtext"  >
+                                
+                                <td><img src= {{text.image}} class="lop"></td>
+                                
+                                <td>{{text.description}}</td>
+                                <td style="margin-left: 4000px;">{{text.price}}</td>
+                                <td>{{text.category}}</td>
+                                <hr>
+                              </tr>
+                            </table>
+                          </div>
+                        </td>
+                      </ng-container>
+                  
+                      <tr mat-header-row *matHeaderRowDef="columnsToDisplay"></tr>
+                      <tr mat-row *matRowDef="let element; columns: columnsToDisplay;" class="example-element-row"
+                        [class.example-expanded-row]="element.expanded" (click)="toggleRow(element)">
+                      </tr>
+                      <tr mat-row *matRowDef="let row; columns: ['expandedDetail']" class="example-detail-row"></tr>
+                    </table>
+                  
+                  </div>-->
+              
+
+                    
+                    
+                    <!--<div  class="dropbtn">
+                      <table>
+                      <tr style="width: 100%;" class="dropdown-content">
+
+                        <th>jhsavj</th>
+                        <th>jhsavj</th>
+                        <th>jhsavj</th>
+                        <th>jhsavj</th>
+                      </tr>
+                      <div class="dropdown-content"  *ngFor="let text of data">
+                        
+                          <table class="table table-bordered" class="detail-table">
+                            <tr class="dropbtn">
+                              <th >Image</th>
+                              <th>Title</th>
+                              <th>price</th>
+                              <th>category</th>
+                              
+                            </tr>
+                          
+                        <tr *ngFor="let text of data | filter:searchtext" class="width: 300px" >
+                                
+                          <td><img src= {{text.image}} class="lop"></td>
+                          
+                          <td>{{text.description}}</td>
+                          <td style="margin-left: 4000px;">{{text.price}}</td>
+                          <td>{{text.category}}</td>
+                          <hr>
+                        </tr>
+                      </table>
+                        
+                      </div>
+                      </table>
+                    </div>-->
+
+                
+                        <!--<main class="table">
+                            <section class="table__header">
+                                <h1>Customer's Orders</h1>
+                                <div class="input-group">
+                                    <input type="search" placeholder="Search Data...">
+                                    <img src="" alt="">
+                                </div>
+                                <div class="export__file">
+                                    <label for="export-file" class="export__file-btn" title="Export File"></label>
+                                    <input type="checkbox" id="export-file">
+                                    <div class="export__file-options">
+                                        <label>Export As &nbsp; &#10140;</label>
+                                        <label for="export-file" id="toPDF">PDF <img src="" alt=""></label>
+                                        <label for="export-file" id="toJSON">JSON <img src="" alt=""></label>
+                                        <label for="export-file" id="toCSV">CSV <img src="" alt=""></label>
+                                        <label for="export-file" id="toEXCEL">EXCEL <img src="" alt=""></label>
+                                    </div>
+                                </div>
+                            </section>
+                            <section class="table__body">
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th> Id <span class="icon-arrow">&UpArrow;</span></th>
+                                            <th> Order Date<span class="icon-arrow">&UpArrow;</span></th>
+                                            <th> Location <span class="icon-arrow">&UpArrow;</span></th>
+                                            
+                                            <th> Status <span class="icon-arrow">&UpArrow;</span></th>
+                                            <th> Action<span class="icon-arrow">&UpArrow;</span></th>
+                                        </tr>
+                                       
+                                        
+                                    
+                                    </thead>
+                                    <div class="dropdown">
+                                    <tbody>
+                                      <thead>
+
+                                    
+                                      
+                                       
+                                         
+                                        
+                                      
+                                        <tr *ngFor="let text of dataSource" class="dropbtn" style=" width: 200px;">
+                                            <td > {{text.orderid}} </td>
+                                           
+                                            <td  styele="margin-left:80px;width:50px;"> {{text.date}}</td>
+                                            <td> {{text.destination}} </td>
+                                            <td>
+                                              <strong><p class="status delivered">{{text.status}}</p ></strong>
+                                            </td>
+                                            <td><button class="status delivered" >complete</button></td>
+
+                                            <div class="dropdown-content">
+                                              <table class="table table-bordered" class="detail-table">
+                                                <tr class="dropbtn">
+                                                  <th >Image</th>
+                                                  <th>Title</th>
+                                                  <th>price</th>
+                                                  <th>category</th>
+                                                  <tr *ngFor="let text of data | filter:searchtext" class="width: 300px" >
+                                
+                                                    <td><img src= {{text.image}} class="lop"></td>
+                                                    
+                                                    <td>{{text.description}}</td>
+                                                    <td style="margin-left: 4000px;">{{text.price}}</td>
+                                                    <td>{{text.category}}</td>
+                                                    <hr>
+                                                  
+                                                  
+                                                </tr>
+                                              </table>
+                                            
+                                            </div>
+                                        </tr>
+                                      </thead>
+                                      
+                                        
+                                      </tbody>
+                                
+                                    </div>
+                                </table>
+                            </section>
+                        </main>
+                    
+                    
+                    
+                    
+                
+    </div>
+    <main class="table">
+      <section class="table__header">
+          <h1>Customer's Orders</h1>
+          <div class="input-group">
+              <input type="search" placeholder="Search Data...">
+              <img src="" alt="">
+          </div>
+          <div class="export__file">
+              <label for="export-file" class="export__file-btn" title="Export File"></label>
+              <input type="checkbox" id="export-file">
+              <div class="export__file-options">
+                  <label>Export As &nbsp; &#10140;</label>
+                  <label for="export-file" id="toPDF">PDF <img src="" alt=""></label>
+                  <label for="export-file" id="toJSON">JSON <img src="" alt=""></label>
+                  <label for="export-file" id="toCSV">CSV <img src="" alt=""></label>
+                  <label for="export-file" id="toEXCEL">EXCEL <img src="" alt=""></label>
+              </div>
+          </div>
+      </section>
+      <section class="table__body">
+          <table>
+              <thead>
+                  <tr>
+                      <th> Id <span class="icon-arrow">&UpArrow;</span></th>
+                      <th> Order Date<span class="icon-arrow">&UpArrow;</span></th>
+                      <th> Location <span class="icon-arrow">&UpArrow;</span></th>
+                      
+                      <th> Status <span class="icon-arrow">&UpArrow;</span></th>
+                      <th> Action<span class="icon-arrow">&UpArrow;</span></th>
+                  </tr>
+                 
+                  
+              
+              </thead>-->
+              
+              
+              <table class="table table-bordered" style="width: 1700px;  font-family: sans-serif; font-size: 20px;">
+                <thead>
+                  <tr>
+                    <th></th>
+                    <th>order id</th>
+                    <th>date</th>
+                    <th>customer</th>
+                    <th>Sales channel</th>
+                    
+                   
+                    <th>destination</th>
+                    <th>items</th>
+                    
+                    
+                    <th>status</th>
+                    
+                    <th>action</th>
+                   
+                  </tr>
+                </thead>
+                <tbody>
+                  <ng-container *ngFor="let row of find">
+                    
+                    <tr>
+                      <td (click)="row.isExpand = !row.isExpand">
+                        <i *ngIf="!row.isExpand" class="fa fa-chevron-up"><img src="https://cdn-icons-png.flaticon.com/512/159/159119.png" style="width: 20px;"></i>
+                        <i *ngIf="row.isExpand" class="fa fa-chevron-down"></i>
+                      </td>
+                      <td>{{ row.orderid }}</td>
+                      <td>{{ row.date }}</td>
+                      <td>{{row.customer}}</td>
+                      <td> <img src="https://1000logos.net/wp-content/uploads/2016/10/Amazon-logo-meaning.jpg"></td>
+
+                     
+                      <td>{{ row.destination }}</td>
+                      <td>9</td>
+                     
+                      
+                      
+                      <td class="status delivered" >{{ row.status }}</td>
+                      <td><button class="status delivered1" (click)="selectFile(row)" >complete</button></td>
+                     
+                      
+                    </tr>
+                  
+                    <tr *ngIf="row.isExpand" style="margin-left: 100px;">
+                      <td colspan="4">
+                        <table class="table table-sm" style="width:1400px;height: 160px;">
+                          <thead>
+                            <th>image</th>
+                            <th>category</th>
+                            <th>description</th>
+                            <th>price</th>
+                            <th>pick</th>
+                            <th>vendor</th>
+                            <th>bin</th>
+                            <th>on-hand</th>
+                          </thead>
+                          <tbody>
+                          
+                            <tr *ngFor="let data of  row.product ">
+                             
+                              <td ><img src="{{ data.image }}" style="width:40px"></td>
+                              <td>{{ data.category }}</td>
+                              <td>{{ data.description }}</td>
+                              <td>{{ data.price }}</td>
+                              <th>3</th>
+                              <th>LEVENTA</th>
+                              <th>C026-005</th>
+                              <th>53</th>
+                              
+                            </tr>
+                        
+                          </tbody>
+                        </table>
+                      </td>
+                    </tr>
+                  
+                  </ng-container>
+                </tbody>
+              </table>
+              

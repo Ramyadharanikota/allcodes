@@ -1,0 +1,159 @@
+<form class="cont1">
+  <div class="box6">
+    <img src="/assets/rt.png" class="log">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+              <span  class="col1">Mens</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <span  class="col1">Womens</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <span  class="col1">Kids</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <span  class="col1">Jewellery</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <span  class="col1">Electronics</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <input  class="input" type ="text" placeholder="Enter first name to search" [(ngModel)]="searchtext"/>
+              <img src="https://cdn2.iconfinder.com/data/icons/ios-7-icons/50/search-512.png" class="bin1">     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <span routerLink="/home" class="color1">HOME</span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <span routerLink="/order" class="color2">PRODUCT</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <span routerLink="/about"  class="color3">ABOUT US</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <span routerLink="/about"  class="color4">PROFILE</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+              <span class="color4"> <!-- <img
+              src="https://th.bing.com/th/id/R.8e2c571ff125b3531705198a15d3103c?rik=gzhbzBpXBa%2bxMA&riu=http%3a%2f%2fpluspng.com%2fimg-png%2fuser-png-icon-big-image-png-2240.png&ehk=VeWsrun%2fvDy5QDv2Z6Xm8XnIMXyeaz2fhR3AgxlvxAc%3d&risl=&pid=ImgRaw&r=0" >--></span>
+              <BR>
+              </div>
+              
+
+    <span>
+      <div *ngIf="images">
+        <div class="mySlides slideshow-container">
+            <img *ngFor="let image of images; let i=index" 
+                [src]="image" 
+                [ngClass]="{'image-active': selectedindex == i}">  
+      
+            <div style="text-align:center; display:inline-block;"  *ngFor="let dot of images; let i=index">
+                <span class="dot" 
+                    (click)="selectImage(i)"
+                    [ngClass]="{'active': selectedindex == i}">
+                </span>
+            </div>
+        </div>
+      </div>
+
+
+<div class="bet">
+  <div class = "product-items">
+      <!-- single product -->
+      <div class = "product" style="background-color:white; border-radius: 10px; width: 400px; height: 550px; "  *ngFor="let text of orders | filter:searchtext" >
+          <div class = "product-content">
+              <div class = "product-img">
+                  <img src = {{text.image}} alt = "product image">
+              </div>
+              <div class = "product-btns">
+                  <button type = "button" class = "btn-cart"> add to cart
+                      <span><i class = "fas fa-plus"></i></span>
+                  </button>
+                  <button type = "button" class = "btn-buy"> buy now
+                      <span><i class = "fas fa-shopping-cart"></i>
+                    </span>
+                  </button>
+              </div>
+          </div>
+
+          <div class = "product-info">
+              <div class = "product-info-top">
+                  <h2 class = "sm-title">lifestyle</h2>
+                  <div class = "rating">
+                      <span><i class = "fas fa-star"></i></span>
+                      <span><i class = "fas fa-star"></i></span>
+                      <span><i class = "fas fa-star"></i></span>
+                      <span><i class = "fas fa-star"></i></span>
+                      <span><i class = "far fa-star"></i></span>
+                  </div>
+              </div>
+              <a href = "#" class = "product-name">{{text.title}}</a>
+              
+              <p class = "product-price">{{text.price}}</p>
+              <button  type="button" routerLink="/order" class="btn-buy"> <i
+                class="fa fa-shopping-cart" ></i>NEXT </button>
+              
+          </div>
+      </div>
+
+      </div>
+      <body>
+    <footer class="footer-distributed">
+
+        <div class="footer-left">
+            <h3>RTI<span>Developer</span></h3>
+
+            <p class="footer-links">
+                <a href="#">Home</a>
+                |
+                <a href="#">About</a>
+                |
+                <a href="#">Contact</a>
+                |
+                <a href="#">Blog</a>
+            </p>
+
+            <p class="footer-company-name">Copyright © 2021 <strong>RTI Developer</strong> All rights reserved</p>
+        </div>
+
+        <div class="footer-center">
+            <div>
+                <i class="fa fa-map-marker"></i>
+                <p><span>Ghaziabad</span>
+                    Delhi</p>
+            </div>
+
+            <div>
+                <i class="fa fa-phone"></i>
+                <p>+91 74**9**258</p>
+            </div>
+            <div>
+                <i class="fa fa-envelope"></i>
+                <p><a href="mailto:rti00001.co@gmail.com">xyz@gmail.com</a></p>
+            </div>
+        </div>
+        <div class="footer-right">
+            <p class="footer-company-about">
+                <span>About the company</span>
+                <strong>RTI Developer</strong> is a Youtube channel where you can find more creative CSS Animations
+                and
+                Effects along with
+                HTML, JavaScript and Projects using C/C++.
+            </p>
+            <div class="footer-icons">
+                <a href="#"><i class="fa fa-facebook"></i></a>
+                <a href="#"><i class="fa fa-instagram"></i></a>
+                <a href="#"><i class="fa fa-linkedin"></i></a>
+                <a href="#"><i class="fa fa-twitter"></i></a>
+                <a href="#"><i class="fa fa-youtube"></i></a>
+            </div>
+        </div>
+    </footer>
+      </body>
+
+    </div>
+
+      
+        
+      
+    
+      
+    
+      
+    
+    
+      
+  
+    </span>
+    <!--<button  routerLink="/order"  type = "button"  class = "btn-buy" > <i class="fa fa-shopping-cart" ></i>NEXT </button>-->
+   
+     
+    
+</form>
+  
+      
+  
+        
+      
+      
+    

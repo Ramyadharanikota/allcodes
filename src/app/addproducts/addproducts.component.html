@@ -1,0 +1,71 @@
+<div class="cont70">
+                  
+                  
+            
+    <div class="box6">
+      <img src="/assets/rt.png" class="log" style="left :40px;">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  
+      <span routerLink="/home" class="button0">HOME</span>
+      <span routerLink="/order" class="button2">PRODUCT</span>
+      <span routerLink="/about"  class="button3">ABOUT US</span>
+      <span routerLink="/profile" class="button4"> <!--<img
+      src="https://th.bing.com/th/id/R.8e2c571ff125b3531705198a15d3103c?rik=gzhbzBpXBa%2bxMA&riu=http%3a%2f%2fpluspng.com%2fimg-png%2fuser-png-icon-big-image-png-2240.png&ehk=VeWsrun%2fvDy5QDv2Z6Xm8XnIMXyeaz2fhR3AgxlvxAc%3d&risl=&pid=ImgRaw&r=0" >-->PROFILE</span>
+      
+        <hr style="width: 4500px; ">
+        
+      </div>
+      <br>
+      <br>
+      
+<body>
+    <div class="Cart-Container">
+
+        <div class="Header">
+            <h3 class="Heading">Shopping Cart</h3>
+           <!-- <h5 class="Action" >Remove all</h5>-->
+            </div>
+
+
+            <div class="Cart-Items" *ngFor="let text of data3">
+                <div class="image-box">
+                <img src={{text.image}} style="height:120px">
+                </div>
+                <div class=about>
+                <h1 class="title">
+                    {{text.title}}
+                </h1>
+                <h3 class="subtitle">{{text.category}}</h3>
+                
+                </div>
+                
+
+                <input type="number" style="width: 40px; margin-right: 40px; ">
+                        
+                        
+                
+                <div class="prices">
+                    <div class="amount">{{text.price}}</div>
+                    <h3 class = "title1" style="font-size: large; font-style: normal; " >{{text.description}}</h3>
+                    
+                    
+                    <!--<button class="remove" (click)="remove(text)" (click)="toggleOrders()"><u>Remove</u></button>-->
+                    
+                </div>  
+                              
+                </div>
+
+                <hr> 
+ <div class="checkout">
+ <div class="total">
+ 
+ 
+ <button class="button" routerLink="/add"  (click)="checkout()">Checkout</button>
+ </div>
+
+
+                
+ </div>
+    </div>
+   </body>
+</div>

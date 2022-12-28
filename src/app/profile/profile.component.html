@@ -1,0 +1,34 @@
+
+<form class="cont4">
+    <div class="box6">
+    
+
+
+        <img src="/assets/rt.png" class="log">
+    
+        <span routerLink="/home" class="color1">HOME</span>
+        <span routerLink="/order" class="color2">PRODUCT</span>
+        <span routerLink="/about"  class="color3">ABOUT US</span>
+        <span routerLink="/profile"  class="color4">PROFILE</span>
+       
+        </div>
+        
+    
+  
+    <div *ngFor="let text of ord">
+        <h1>{{text.address}}</h1>
+        <h1>{{text.id}}</h1>
+        <h1>{{text.email}}</h1>
+        <h1>{{text.username}}</h1>
+        <h1>{{text.password}}</h1>
+
+    </div>
+    <!--<button  routerLink="/submitted"  type = "button"  class = "btn-buy" > <i class="fa fa-shopping-cart" ></i>NEXT </button>-->
+</form>
+  
+      
+  
+        
+      
+      
+    
